@@ -1,0 +1,69 @@
+body {
+    background-color: #151515;
+    color: rgb(25, 23, 23);
+    font-family: Arial, sans-serif;
+  }
+  
+  .header, .footer {
+    background-color: #252525;
+    padding: 1rem;
+  }
+  
+  .footer {
+    text-align: center;
+    color: #bbb;
+  }
+  
+  .sidebar {
+    background-color: #252525;
+    height: 100vh;
+  }
+  
+  .sidebar .nav-link {
+    color: #bbb;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #fff;
+    background-color: #333;
+  }
+  
+  .card {
+    background-color: #2e2e2e;
+    border: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-header {
+    background-color: #333;
+    border-bottom: none;
+  }
+  
+  .card-title {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .card-body {
+    padding: 1rem 1.5rem;
+  }
+  
+  .card-footer {
+    border-top: none;
+    background-color: #333;
+  }
+  
+  .metric {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .sub-metric {
+    font-size: 1rem;
+    color: #bbb;
+  }
+  
+  .btn-more {
+    color: #ff8c00;
+  }
+  

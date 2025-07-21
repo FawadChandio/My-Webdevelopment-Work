@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Dashboard</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .header, .footer {
+      background-color: #252525;
+      padding: 1rem;
+    }
+    .footer {
+      text-align: center;
+      color: #bbb;
+    }
+    .sidebar {
+      background-color: #252525;
+      height: 100vh;
+    }
+    .sidebar .nav-link {
+      color: #bbb;
+    }
+    .sidebar .nav-link.active {
+      color: #fff;
+      background-color: #333;
+    }
+    .card {
+      background-color: #2e2e2e;
+      border: none;
+      margin-bottom: 1.5rem;
+    }
+    .card-header {
+      background-color: #333;
+      border-bottom: none;
+    }
+    .card-title {
+      color: #fff;
+      font-size: 18px;
+    }
+    .card-body {
+      padding: 1rem 1.5rem;
+    }
+    .card-footer {
+      border-top: none;
+      background-color: #333;
+    }
+    .metric {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .sub-metric {
+      font-size: 1rem;
+      color: #bbb;
+    }
+    .btn-more {
+      color: #ff8c00;
+    }
+  </style>
+</head>
+<body>
+  <div class="header d-flex justify-content-between align-items-center">
+    <div class="ml-3">
+      <h4>Executive Dashboard</h4>
+    </div>
+    <div class="mr-3">
+      <span>Welcome, sme</span>
+    </div>
+  </div>
+  <div class="d-flex">
+    <div class="sidebar p-3">
+      <nav class="nav flex-column">
+        <a class="nav-link active" href="#">Dashboard</a>
+        <a class="nav-link" href="#">Reports</a>
+        <a class="nav-link" href="#">Web Threat Protection</a>
+        <a class="nav-link" href="#">Network Monitoring</a>
+        <a class="nav-link" href="#">Endpoint Security</a>
+        <a class="nav-link" href="#">Email Guard</a>
+        <a class="nav-link" href="#">Vulnerability Management</a>
+        <a class="nav-link" href="#">Remote Monitoring</a>
+      </nav>
+    </div>
+    <div class="flex-grow-1 p-3">
+      <div class="row">
+        <!-- Web Threat Protection -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-globe"></i>
+              <h5 class="card-title">Web Threat Protection</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">0</div>
+              <div class="sub-metric">Available</div>
+              <div class="metric">16</div>
+              <div class="sub-metric">Protected</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more websites</button>
+            </div>
+          </div>
+        </div>
+        <!-- Endpoint Security -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-desktop"></i>
+              <h5 class="card-title">Endpoint Security</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">0</div>
+              <div class="sub-metric">Available</div>
+              <div class="metric">0</div>
+              <div class="sub-metric">Protected</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more endpoints</button>
+            </div>
+          </div>
+        </div>
+        <!-- Email Guard -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-envelope"></i>
+              <h5 class="card-title">Email Guard</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">0</div>
+              <div class="sub-metric">Available</div>
+              <div class="metric">0</div>
+              <div class="sub-metric">Protected</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more emails</button>
+            </div>
+          </div>
+        </div>
+        <!-- Network Monitoring -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-network-wired"></i>
+              <h5 class="card-title">Network Monitoring</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">AlertedError: 0</div>
+              <div class="sub-metric">AlertedWarning: 0</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more networks</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Vulnerability Management -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-bullseye"></i>
+              <h5 class="card-title">Vulnerability Management</h5>
+            </div>
+            <div class="card-body text-center">
+              <p>Your next scan:</p>
+              <p>execution time not found</p>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more scans</button>
+            </div>
+          </div>
+        </div>
+        <!-- Remote Monitoring Management -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-eye"></i>
+              <h5 class="card-title">Remote Monitoring Management</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">0</div>
+              <div class="sub-metric">Available</div>
+              <div class="metric">0</div>
+              <div class="sub-metric">Protected</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more devices</button>
+            </div>
+          </div>
+        </div>
+        <!-- SIEM -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-shield-alt"></i>
+              <h5 class="card-title">SIEM</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">Unique IPs: 0</div>
+              <div class="sub-metric">Attacks: 0</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more devices</button>
+            </div>
+          </div>
+        </div>
+        <!-- Risk Management -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-exclamation-triangle"></i>
+              <h5 class="card-title">Risk Management</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">6</div>
+              <div class="sub-metric">Portfolios</div>
+              <div class="metric">3</div>
+              <div class="sub-metric">Companies</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more devices</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Converged Endpoint Management (XEM) -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-tablet-alt"></i>
+              <h5 class="card-title">Converged Endpoint Management (XEM)</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">0</div>
+              <div class="sub-metric">Total Endpoint</div>
+              <div class="metric">0</div>
+              <div class="sub-metric">Active Endpoints</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more devices</button>
+            </div>
+          </div>
+        </div>
+        <!-- Information Technology Service Management -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-cogs"></i>
+              <h5 class="card-title">Information Technology Service Management</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">Tasks: 0</div>
+              <div class="sub-metric">Projects: 0</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more devices</button>
+            </div>
+          </div>
+        </div>
+        <!-- Firewall -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <i class="fas fa-fire"></i>
+              <h5 class="card-title">Firewall</h5>
+            </div>
+            <div class="card-body text-center">
+              <div class="metric">0</div>
+              <div class="sub-metric">Available</div>
+              <div class="metric">0</div>
+              <div class="sub-metric">Protected</div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-link btn-more">+ more devices</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2024 BlockAPT Limited | Registered company number: 11753911 | All rights reserved worldwide.</p>
+    <p>Privacy Policy | <a href="#" style="color: #bbb;">www.blockapt.com</a></p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

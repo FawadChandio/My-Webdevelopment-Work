@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <div class="d-flex">
+        <div id="sidebar-placeholder" class="sidebar p-3"></div>
+        <div class="row">
+            <!-- Web Threat Protection -->
+            <div class="container">
+                <div class="row">
+                    <!-- Web Threat Protection -->
+                    <div class="col-md-3">
+                        <img src="images/image1.jpg" alt="Web Threat Protection" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                    <!-- Endpoint Security -->
+                    <div class="col-md-3">
+                        <img src="images/image2.jpg" alt="Endpoint Security" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                    <!-- Email Guard -->
+                    <div class="col-md-3">
+                        <img src="images/image3.jpg" alt="Email Guard" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                    <!-- Network Monitoring -->
+                    <div class="col-md-3">
+                        <img src="images/image4.jpg" alt="Network Monitoring" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Vulnerability Management -->
+                    <div class="col-md-3">
+                        <img src="images/image5.jpg" alt="Vulnerability Management" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                    <!-- Remote Monitoring Management -->
+                    <div class="col-md-3">
+                        <img src="images/image6.jpg" alt="Remote Monitoring Management" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                    <!-- SIEM -->
+                    <div class="col-md-3">
+                        <img src="images/image7.jpg" alt="SIEM" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                    <!-- Risk Management -->
+                    <div class="col-md-3">
+                        <img src="images/image8.jpg" alt="Risk Management" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Converged Endpoint Management (XEM) -->
+                    <div class="col-md-4">
+                        <img src="images/image9.jpg" alt="Converged Endpoint Management (XEM)" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                    <!-- Information Technology Service Management -->
+                    <div class="col-md-4">
+                        <img src="images/image10.jpg" alt="Information Technology Service Management" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                    <!-- Firewall -->
+                    <div class="col-md-4">
+                        <img src="images/image11.jpg" alt="Firewall" class="img-fluid" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        fetch('/Partials/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        fetch('/Partials/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+
+        fetch('/Partials/sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading sidebar:', error));
+    </script>
+</body>
+
+</html>
